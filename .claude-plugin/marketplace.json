@@ -6,7 +6,11 @@
   "plugins": [
     {
       "name": "chris-claude-tools",
-      "source": "/Users/chris/src/ChrisSimmons/claude-tools",
+      "source": {
+      "source": "github",
+      "repo": "ChrisSimmons/claude-tools",
+      "ref": "init"
+    },
       "description": "Personal Claude Code skills and tools.",
       "version": "1.0.0"
     }
