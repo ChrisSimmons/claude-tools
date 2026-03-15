@@ -1,0 +1,14 @@
+{
+  "name": "chris-claude-tools",
+  "owner": {
+    "name": "Chris"
+  },
+  "plugins": [
+    {
+      "name": "chris-claude-tools",
+      "source": "../",
+      "description": "Personal Claude Code skills and tools.",
+      "version": "1.0.0"
+    }
+  ]
+}
