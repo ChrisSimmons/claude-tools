@@ -7,6 +7,7 @@
     {
       "name": "chris-claude-tools",
       "source": {
+        "source": "github",
         "repo": "ChrisSimmons/claude-tools"
       },
       "description": "Personal Claude Code skills and tools.",
