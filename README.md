@@ -35,3 +35,11 @@ Add this marketplace to Claude Code:
 ``` plaintext
 /plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
 ```
+
+Then add the following to `~/.claude/CLAUDE.md` to load behavioral rules at the start of every session:
+
+```
+At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` and apply the rules.
+```
+
+To reload rules mid-session, use the `/refresh-rules` skill.
