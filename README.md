@@ -28,23 +28,37 @@ https://public-mcp.chris-simmons.workers.dev/mcp
 
 Currently exposes:
 
-| Resource      | URI                                                 | Description                                      |
-| ------------- | --------------------------------------------------- | ------------------------------------------------ |
-| `agent-rules` | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents |
+| Resource             | URI                                                 | Description                                           |
+| -------------------- | --------------------------------------------------- | ----------------------------------------------------- |
+| `agent-rules`        | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents      |
+| `agent-rules-dotnet` | `chris-simmons://public-mcp/agent/rules/dotnet`     | .NET-specific rules for C# / .NET projects            |
 
-#### Updating `agent-rules`
+#### Updating resources
 
-Edit `mcp-servers/public/src/resources/agent-rules.md`, push to `main`. GitHub Actions deploys automatically.
+Edit the relevant file under `mcp-servers/public/src/resources/`, push to `main`. GitHub Actions deploys automatically.
+
+| Resource             | Source file                                              |
+| -------------------- | -------------------------------------------------------- |
+| `agent-rules`        | `mcp-servers/public/src/resources/agent-rules.md`        |
+| `agent-rules-dotnet` | `mcp-servers/public/src/resources/agent-rules-dotnet.md` |
 
 #### Using `agent-rules`
 
 Add the following to `~/.claude/CLAUDE.md` to load behavioral rules at the start of every session:
 
 ``` markdown
-At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` and apply the rules.
+At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules. If at any point during the session you read or edit a `*.sln` or `*.csproj` file, also read `chris-simmons://public-mcp/agent/rules/dotnet` from the same server and apply those rules (do this only once per session).
 ```
 
 To reload rules mid-session, use the `/refresh-rules` skill.
+
+#### Using `agent-rules-dotnet`
+
+.NET rules load passively (see above). Once loaded, the rules will prompt you to add an explicit directive to the project's `CLAUDE.md` for future sessions:
+
+``` markdown
+At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/dotnet` from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules.
+```
 
 #### Adding resources/tools/prompts
 
