@@ -1,23 +1,13 @@
 {
   "name": "chris-simmons-marketplace",
   "owner": {
-    "name": "Chris"
+    "name": "Chris Simmons",
+    "email": "github.com@netchris.com"
   },
   "plugins": [
     {
-      "name": "chris-public-mcp-server",
-      "source": "./",
-      "description": "Public MCP server.",
-      "version": "1.0.0",
-      "mcpServers": {
-        "public-mcp": {
-          "type": "http",
-          "url": "https://public-mcp.chris-simmons.workers.dev/mcp"
-        }
-      },
-      "skills": [
-        "./skills/refresh-rules"
-      ]
+      "name": "public-mcp-server",
+      "source": "./plugins/public-mcp-server"
     }
   ]
 }

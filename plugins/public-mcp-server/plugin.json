@@ -1,0 +1,21 @@
+{
+  "name": "public-mcp-server",
+  "displayName": "Public MCP Server",
+  "description": "Public MCP server and associated skill(s).",
+  "author": {
+    "name": "Chris Simmons",
+    "email": "github.com@netchris.com",
+    "url": "https://github.com/ChrisSimmons"
+  },
+  "version": "1.0.0",
+  "repository": "https://github.com/ChrisSimmons/claude-tools",
+  "mcpServers": {
+    "public-mcp": {
+      "type": "http",
+      "url": "https://public-mcp.chris-simmons.workers.dev/mcp"
+    }
+  },
+  "skills": [
+    "./skills/refresh-rules"
+  ]
+}
