@@ -17,31 +17,9 @@ version: 1.0.1
 - Avoid introducing hidden behavior or "magic" abstractions. Prefer explicit, visible code even at the cost of more lines. Flag when an option involves hidden behavior.
 - Warnings should be considered errors unless there is no practical way around it.
 
-### Code Style - .NET-Specific
-
-- Never suggest or add `<ImplicitUsings>enable</ImplicitUsings>`. Always use explicit `using` directives.
-- File-scoped namespaces required.
-- Nullable reference types must be enabled.
-- XML documentation comments on all public APIs (`<summary>`, `<param>`, `<returns>`).
-- Never use top-level statements. Always use explicit `Program` class with `static void Main` or `static async Task Main`.
-- One file per class. Exceptions: `Type` and `Type<T>` pairs can share a file, and nested classes naturally live in their parent's file.
-- In `PackageReference` version strings, `*` may only appear in the patch position (e.g. `2.9.*`). Never use `*` for major or minor versions (no `2.*` or `*`).
-
-## Testing
-
-- Never run integration tests. Only run unit tests.
-- Never use `dotnet run` on a test project. Use `dotnet test`. Exhaust all other debugging options first.
-
-## Database
-
-### Database - Entity Framework
-
-- Never automatically apply EF Core migrations from within the application. Not on startup, not via a hosted service, not in any environment. Migrations are a deployment step, applied externally (e.g. `dotnet ef database update`, a migration runner project, or a k8s init container). Never suggest or implement auto-migration in application code.
-
 ## Git
 
 - Run unit tests after every change, before committing.
-- In .NET projects with `.editorconfig` files, run `dotnet format` after committing. If it produces changes, commit them separately with a message like "dotnet format". This keeps formatting churn out of meaningful diffs.  If the diff after `dotnet format` is significant or includes files that were not changed in the branch, revert and then ask the user if they'd like to proceed with formatting.
 - NEVER commit if on a default branch (i.e. `main` or `master`)
 - The user may switch branches or pull out-of-band at any time. Run `git branch --show-current` immediately before every `git commit` to confirm you are not on a default branch, regardless of what branch you think you're on.
 - Before doing any editing, ensure the working copy is on a non-default branch

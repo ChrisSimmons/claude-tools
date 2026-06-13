@@ -1,4 +1,5 @@
 import rulesContent from "./resources/agent-rules.md";
+import dotnetRulesContent from "./resources/agent-rules-dotnet.md";
 
 interface JsonRpcRequest {
   jsonrpc: string;
@@ -8,16 +9,29 @@ interface JsonRpcRequest {
 }
 
 const SERVER_INFO = { name: "public-mcp", version: "1.0.0" };
-const RESOURCE_URI = "chris-simmons://public-mcp/agent/rules/behavioral";
+
+const RESOURCE_URI_BEHAVIORAL = "chris-simmons://public-mcp/agent/rules/behavioral";
+const RESOURCE_URI_DOTNET = "chris-simmons://public-mcp/agent/rules/dotnet";
 
 const RESOURCES = [
   {
-    uri: RESOURCE_URI,
+    uri: RESOURCE_URI_BEHAVIORAL,
     name: "agent-rules",
     description: "Behavioral and communication rules for AI agents",
     mimeType: "text/markdown",
   },
+  {
+    uri: RESOURCE_URI_DOTNET,
+    name: "agent-rules-dotnet",
+    description: ".NET-specific rules for AI agents working in C# / .NET projects",
+    mimeType: "text/markdown",
+  },
 ];
+
+const RESOURCE_CONTENTS: Record<string, string> = {
+  [RESOURCE_URI_BEHAVIORAL]: rulesContent,
+  [RESOURCE_URI_DOTNET]: dotnetRulesContent,
+};
 
 function ok(id: string | number | null | undefined, result: unknown): Response {
   return new Response(JSON.stringify({ jsonrpc: "2.0", id: id ?? null, result }), {
@@ -74,11 +88,12 @@ export default {
 
       case "resources/read": {
         const { uri } = params as { uri: string };
-        if (uri !== RESOURCE_URI) {
+        const content = RESOURCE_CONTENTS[uri];
+        if (content === undefined) {
           return rpcError(id, -32602, `Unknown resource: ${uri}`);
         }
         return ok(id, {
-          contents: [{ uri: RESOURCE_URI, text: rulesContent, mimeType: "text/markdown" }],
+          contents: [{ uri, text: content, mimeType: "text/markdown" }],
         });
       }
 
