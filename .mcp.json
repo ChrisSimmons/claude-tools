@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "chris-tools-public": {
+      "type": "http",
+      "url": "https://chris-tools-public.FILL_IN_AFTER_DEPLOY.workers.dev/mcp"
+    }
+  }
+}
