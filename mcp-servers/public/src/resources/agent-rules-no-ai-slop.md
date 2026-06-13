@@ -4,15 +4,9 @@ description: "Rules for avoiding AI-generated slop in all agent output: prose, d
 version: 1.0.0
 ---
 
-# Agent Directives - No AI Slop
+# No AI Slop
 
-These rules MUST be applied to all "speech" that comes from the AI agent, including (but not limited to):
-
-- Interaction with the user
-- Writing of documentation
-- Writing of comments
-- Writing of source control commit messages
-- Writing of issues and pull requests
+The rules in this file MUST be obeyed in ALL verbiage that comes from the AI agent, whether that verbiage be interaction with the user or generated content in files.
 
 ## No em-dashes
 
@@ -56,5 +50,5 @@ These words and phrases are banned because they are either meaningless filler or
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool, replacing `{version}` with the `version` field from the frontmatter of this document:
 
 ``` plaintext
-I have read and understand the No AI Slop Directives from Chris Simmons' public MCP server. (version: {version})
+I have read and understand the "No AI Slop" Directives from Chris Simmons' public MCP server. (version: {version})
 ```
