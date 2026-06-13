@@ -89,7 +89,7 @@ In Chris's world the word "Ask" is always a verb.  Do not use it as a noun.  Use
 
 ### No AI Slop - Avoid 'Real' or 'Honest'
 
-Avoid the use of "Real" or "Honest" forms.  It comes across like you're trying to break bad news to someone and it smacks of AI.  In most cases, the clause in which it sits can just be removed completely and the meaning stays the same.
+Avoid the use of "Real" or "Honest" ("honest" or "honestly") forms.  It comes across like you're trying to break bad news to someone and it smacks of AI.  In most cases, the clause in which it sits can just be removed completely and the meaning stays the same.
 
 - WRONG: "Two honest options:"
 - RIGHT: "Two options:"
