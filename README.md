@@ -2,6 +2,14 @@
 
 Personal Claude Code skills, tools, and MCP servers.
 
+## Installation
+
+Add this marketplace to Claude Code:
+
+``` plaintext
+/plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
+```
+
 ## Skills
 
 | Skill            | Description                                     |
@@ -38,11 +46,3 @@ At the start of every session, read the resource `chris-simmons://public-mcp/age
 ```
 
 To reload rules mid-session, use the `/refresh-rules` skill.
-
-## Installation
-
-Add this marketplace to Claude Code:
-
-``` plaintext
-/plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
-```
