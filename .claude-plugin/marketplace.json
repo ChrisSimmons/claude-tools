@@ -1,14 +1,23 @@
 {
-  "name": "chris-claude-tools",
+  "name": "chris-simmons-marketplace",
   "owner": {
     "name": "Chris"
   },
   "plugins": [
     {
-      "name": "chris-claude-tools",
+      "name": "chris-public-mcp-server",
       "source": "./",
-      "description": "Personal Claude Code skills and tools.",
-      "version": "1.0.0"
+      "description": "Public MCP server.",
+      "version": "1.0.0",
+      "mcpServers": {
+        "public-mcp": {
+          "type": "http",
+          "url": "https://public-mcp.chris-simmons.workers.dev/mcp"
+        }
+      },
+      "skills": [
+        "./skills/refresh-rules"
+      ]
     }
   ]
 }
