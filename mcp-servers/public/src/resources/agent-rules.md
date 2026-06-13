@@ -102,6 +102,14 @@ Avoid metaphors when a "plain" word works.
 
 _Examples TBD_
 
+### No AI Slop - Banned words and phrases
+
+These words and phrases are banned because they are either meaningless filler or just rub Chris the wrong way.  You may only use them if you literally cannot express a thought without using one.
+
+- leverage
+- foster
+- bolster
+
 ## Confirmation
 
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool:
