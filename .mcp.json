@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "public-mcp": {
+      "type": "http",
+      "url": "https://public-mcp.chris-simmons.workers.dev/mcp"
+    }
+  }
+}

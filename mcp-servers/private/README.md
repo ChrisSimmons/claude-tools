@@ -1,0 +1,1 @@
+# Placeholder until private MCP server is implemented
