@@ -19,7 +19,7 @@ jobs:
         run: npm ci
         working-directory: mcp-servers/public
       - name: Deploy to Cloudflare Workers
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           workingDirectory: mcp-servers/public
