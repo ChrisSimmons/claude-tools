@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "claude-tools-public": {
+    "public-mcp": {
       "type": "http",
-      "url": "https://claude-tools-public.chris-simmons.workers.dev/mcp"
+      "url": "https://public-mcp.chris-simmons.workers.dev/mcp"
     }
   }
 }

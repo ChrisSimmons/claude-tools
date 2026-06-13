@@ -1,4 +1,4 @@
-import rulesContent from "./resources/claude-rules.md";
+import rulesContent from "./resources/agent-rules.md";
 
 interface JsonRpcRequest {
   jsonrpc: string;
@@ -7,14 +7,15 @@ interface JsonRpcRequest {
   params?: unknown;
 }
 
+// name is the MCP identity; the CF worker name (public-mcp) drives the URL separately
 const SERVER_INFO = { name: "tools-public", version: "1.0.0" };
-const RESOURCE_URI = "rules://claude-config";
+const RESOURCE_URI = "agent://rules/behavioral";
 
 const RESOURCES = [
   {
     uri: RESOURCE_URI,
-    name: "claude-rules",
-    description: "Behavioral and communication rules for Claude",
+    name: "agent-rules",
+    description: "Behavioral and communication rules for AI agents",
     mimeType: "text/markdown",
   },
 ];
