@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "chris-tools-public": {
+    "claude-tools-public": {
       "type": "http",
-      "url": "https://chris-tools-public.FILL_IN_AFTER_DEPLOY.workers.dev/mcp"
+      "url": "https://claude-tools-public.chris-simmons.workers.dev/mcp"
     }
   }
 }
