@@ -4,7 +4,7 @@ description: ".NET-specific directives for an AI agent working in C# / .NET proj
 version: 1.0.0
 ---
 
-# Agent Directives - .NET
+# .NET Projects
 
 ## Code Style - .NET
 

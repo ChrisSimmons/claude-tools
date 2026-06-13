@@ -4,7 +4,7 @@ description: "General directives for an AI agent, as well as worked examples for
 version: 1.2.0
 ---
 
-# Agent Directives
+# General Directives
 
 ## Prime Directives
 
