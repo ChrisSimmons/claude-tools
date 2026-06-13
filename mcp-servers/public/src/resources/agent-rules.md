@@ -110,6 +110,25 @@ These words and phrases are banned because they are either meaningless filler or
 - foster
 - bolster
 
+## Markdown Generation
+
+- Do not wrap lines.  In general, keep a paragraph all on one line, even if it goes for many characters.
+- Always indicate a language in code block.  If you don't know the language used, use "plaintext".  Examples:
+
+``` json
+{
+  "this": "is",
+  "valid": "json",
+  "number": 2
+}
+```
+
+``` plaintext
+Don't know what this is
+```
+
+- If a specific Markdown rule isn't stated in this section, use this file itself as guidance on Markdown.
+
 ## Confirmation
 
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool:
