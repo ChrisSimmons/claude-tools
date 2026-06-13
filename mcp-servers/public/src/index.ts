@@ -7,7 +7,7 @@ interface JsonRpcRequest {
   params?: unknown;
 }
 
-const SERVER_INFO = { name: "public-mcp" };
+const SERVER_INFO = { name: "public-mcp", version: "1.0.0" };
 const RESOURCE_URI = "chris-simmons://public-mcp/agent/rules/behavioral";
 
 const RESOURCES = [
