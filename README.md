@@ -14,7 +14,7 @@ Add this marketplace to Claude Code:
 
 | Skill           | Description                                             |
 | --------------- | ------------------------------------------------------- |
-| `refresh-rules` | Reload behavioral rules from the MCP server mid-session |
+| `refresh-rules` | Reload general rules from the MCP server mid-session |
 
 ## MCP Servers
 
@@ -28,10 +28,10 @@ https://public-mcp.chris-simmons.workers.dev/mcp
 
 Currently exposes:
 
-| Resource             | URI                                                 | Description                                           |
-| -------------------- | --------------------------------------------------- | ----------------------------------------------------- |
-| `agent-rules`        | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents      |
-| `agent-rules-dotnet` | `chris-simmons://public-mcp/agent/rules/dotnet`     | .NET-specific rules for C# / .NET projects            |
+| Resource             | URI                                                 | Description                                |
+| -------------------- | --------------------------------------------------- | ------------------------------------------ |
+| `agent-rules`        | `chris-simmons://public-mcp/agent/rules/general` | General rules for AI agents                |
+| `agent-rules-dotnet` | `chris-simmons://public-mcp/agent/rules/dotnet`     | .NET-specific rules for C# / .NET projects |
 
 #### Updating resources
 
@@ -44,10 +44,10 @@ Edit the relevant file under `mcp-servers/public/src/resources/`, push to `main`
 
 #### Using `agent-rules`
 
-Add the following to `~/.claude/CLAUDE.md` to load behavioral rules at the start of every session:
+Add the following to `~/.claude/CLAUDE.md` to load general rules at the start of every session:
 
 ``` markdown
-At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules. If at any point during the session you read or edit a `*.sln` or `*.csproj` file, also read `chris-simmons://public-mcp/agent/rules/dotnet` from the same server and apply those rules (do this only once per session).
+At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/general` from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules. If at any point during the session you read or edit a `*.sln` or `*.csproj` file, also read `chris-simmons://public-mcp/agent/rules/dotnet` from the same server and apply those rules (do this only once per session).
 ```
 
 To reload rules mid-session, use the `/refresh-rules` skill.

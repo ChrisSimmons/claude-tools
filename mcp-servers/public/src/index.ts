@@ -10,14 +10,14 @@ interface JsonRpcRequest {
 
 const SERVER_INFO = { name: "public-mcp", version: "1.0.0" };
 
-const RESOURCE_URI_BEHAVIORAL = "chris-simmons://public-mcp/agent/rules/behavioral";
+const RESOURCE_URI_BEHAVIORAL = "chris-simmons://public-mcp/agent/rules/general";
 const RESOURCE_URI_DOTNET = "chris-simmons://public-mcp/agent/rules/dotnet";
 
 const RESOURCES = [
   {
     uri: RESOURCE_URI_BEHAVIORAL,
     name: "agent-rules",
-    description: "Behavioral and communication rules for AI agents",
+    description: "General rules for AI agents",
     mimeType: "text/markdown",
   },
   {
