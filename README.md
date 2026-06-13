@@ -7,7 +7,7 @@ Personal Claude Code skills, tools, and MCP servers.
 Add this marketplace to Claude Code:
 
 ``` plaintext
-/plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
+/plugin marketplace add ChrisSimmons/claude-tools
 ```
 
 ## Skills
