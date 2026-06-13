@@ -28,19 +28,21 @@ https://public-mcp.chris-simmons.workers.dev/mcp
 
 Currently exposes:
 
-| Resource             | URI                                                 | Description                                |
-| -------------------- | --------------------------------------------------- | ------------------------------------------ |
-| `agent-rules`        | `chris-simmons://public-mcp/agent/rules/general` | General rules for AI agents                |
-| `agent-rules-dotnet` | `chris-simmons://public-mcp/agent/rules/dotnet`     | .NET-specific rules for C# / .NET projects |
+| Resource                 | URI                                                 | Description                                |
+| ------------------------ | --------------------------------------------------- | ------------------------------------------ |
+| `agent-rules`            | `chris-simmons://public-mcp/agent/rules/general`    | General rules for AI agents                |
+| `agent-rules-no-ai-slop` | `chris-simmons://public-mcp/agent/rules/no-ai-slop` | Rules for avoiding AI-generated slop       |
+| `agent-rules-dotnet`     | `chris-simmons://public-mcp/agent/rules/dotnet`     | .NET-specific rules for C# / .NET projects |
 
 #### Updating resources
 
 Edit the relevant file under `mcp-servers/public/src/resources/`, push to `main`. GitHub Actions deploys automatically.
 
-| Resource             | Source file                                              |
-| -------------------- | -------------------------------------------------------- |
-| `agent-rules`        | `mcp-servers/public/src/resources/agent-rules.md`        |
-| `agent-rules-dotnet` | `mcp-servers/public/src/resources/agent-rules-dotnet.md` |
+| Resource                 | Source file                                                   |
+| ------------------------ | ------------------------------------------------------------- |
+| `agent-rules`            | `mcp-servers/public/src/resources/agent-rules.md`             |
+| `agent-rules-no-ai-slop` | `mcp-servers/public/src/resources/agent-rules-no-ai-slop.md`  |
+| `agent-rules-dotnet`     | `mcp-servers/public/src/resources/agent-rules-dotnet.md`      |
 
 #### Using `agent-rules`
 

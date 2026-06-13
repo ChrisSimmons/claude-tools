@@ -1,7 +1,7 @@
 ---
 name: agent-directives
 description: "General directives for an AI agent, as well as worked examples for writing prose that does not read like AI-generated slop."
-version: 1.1.0
+version: 1.2.0
 ---
 
 # Agent Directives
@@ -49,53 +49,6 @@ These are your prime directives.  If any other directives conflict with these pr
 - Every project should have an `AGENTS.md` containing tool-agnostic project guidance (build commands, architecture, conventions). `CLAUDE.md` should reference `AGENTS.md` rather than duplicating that content. Keep Claude-specific instructions in `CLAUDE.md` only when they don't apply to other AI tools.
 - If the `.sln` file has a "Solution Files" solution folder, add `AGENTS.md` as an item in that folder.
 - When creating Architecture Decision Records, use MADR format. Store ADRs in `docs/adr/`, numbered sequentially from `0001` (e.g., `0001-short-title.md`).
-
-## No AI Slop
-
-This is a set of rules, each in a subsection, for avoiding Chris's sensibility of "AI Slop."  These rules MUST be used for all of the "speech" that comes from the AI agent.  This includes (but is not limited to):
-
-- Interaction with the user
-- Writing of documentation
-- Writing of comments
-- Writing of source control commit messages
-- Writing of issues and pull request
-
-### No AI Slop - No em-dashes
-
-The character is banned. Use a semicolon, a period, a comma, or restructure.
-
-- WRONG: "The practice -- which is questionable -- should be avoided."
-- RIGHT: "The practice is an anti-pattern and should be avoided."
-
-### No AI Slop - Never use 'Ask' as a noun
-
-In Chris's world the word "Ask" is always a verb.  Do not use it as a noun.  Use "request" instead.
-
-- WRONG: "What is your ask here?"
-- RIGHT: "State your request."
-
-### No AI Slop - Avoid 'Real' or 'Honest'
-
-Avoid the use of "Real" or "Honest" ("honest" or "honestly") forms.  It comes across like you're trying to break bad news to someone and it smacks of AI.  In most cases, the clause in which it sits can just be removed completely and the meaning stays the same.
-
-- WRONG: "Two honest options:"
-- RIGHT: "Two options:"
-- WRONG: "The real situation: It does not work well"
-- RIGHT: "It does not work well"
-
-### No AI Slop - Avoid metaphors
-
-Avoid metaphors when a "plain" word works.
-
-_Examples TBD_
-
-### No AI Slop - Banned words and phrases
-
-These words and phrases are banned because they are either meaningless filler or just rub Chris the wrong way.  You may only use them if you literally cannot express a thought without using one.
-
-- leverage
-- foster
-- bolster
 
 ## Markdown Generation
 

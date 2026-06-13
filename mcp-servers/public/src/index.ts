@@ -1,5 +1,6 @@
 import rulesContent from "./resources/agent-rules.md";
 import dotnetRulesContent from "./resources/agent-rules-dotnet.md";
+import noAiSlopRulesContent from "./resources/agent-rules-no-ai-slop.md";
 
 interface JsonRpcRequest {
   jsonrpc: string;
@@ -10,12 +11,13 @@ interface JsonRpcRequest {
 
 const SERVER_INFO = { name: "public-mcp", version: "1.0.0" };
 
-const RESOURCE_URI_BEHAVIORAL = "chris-simmons://public-mcp/agent/rules/general";
+const RESOURCE_URI_GENERAL = "chris-simmons://public-mcp/agent/rules/general";
 const RESOURCE_URI_DOTNET = "chris-simmons://public-mcp/agent/rules/dotnet";
+const RESOURCE_URI_NO_AI_SLOP = "chris-simmons://public-mcp/agent/rules/no-ai-slop";
 
 const RESOURCES = [
   {
-    uri: RESOURCE_URI_BEHAVIORAL,
+    uri: RESOURCE_URI_GENERAL,
     name: "agent-rules",
     description: "General rules for AI agents",
     mimeType: "text/markdown",
@@ -26,11 +28,18 @@ const RESOURCES = [
     description: ".NET-specific rules for AI agents working in C# / .NET projects",
     mimeType: "text/markdown",
   },
+  {
+    uri: RESOURCE_URI_NO_AI_SLOP,
+    name: "agent-rules-no-ai-slop",
+    description: "Rules for avoiding AI-generated slop in all agent output",
+    mimeType: "text/markdown",
+  },
 ];
 
 const RESOURCE_CONTENTS: Record<string, string> = {
-  [RESOURCE_URI_BEHAVIORAL]: rulesContent,
+  [RESOURCE_URI_GENERAL]: rulesContent,
   [RESOURCE_URI_DOTNET]: dotnetRulesContent,
+  [RESOURCE_URI_NO_AI_SLOP]: noAiSlopRulesContent,
 };
 
 function ok(id: string | number | null | undefined, result: unknown): Response {
