@@ -31,7 +31,7 @@ version: 1.0.0
 
 ## Project Setup
 
-If the current project does not have a `CLAUDE.md` or `AGENTS.md` file, or if the file(s) do exist and the directive doesn't exist in the file(s), suggest creating one and include the following instruction in it:
+If the current project does not have a `CLAUDE.md` file, or if it exists but does not contain the following directive, suggest adding the directive to `CLAUDE.md`:
 
 ``` markdown
 At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/dotnet` from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules.
