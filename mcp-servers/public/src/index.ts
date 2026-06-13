@@ -7,7 +7,7 @@ interface JsonRpcRequest {
   params?: unknown;
 }
 
-const SERVER_INFO = { name: "chris-tools-public", version: "1.0.0" };
+const SERVER_INFO = { name: "tools-public", version: "1.0.0" };
 const RESOURCE_URI = "rules://claude-config";
 
 const RESOURCES = [

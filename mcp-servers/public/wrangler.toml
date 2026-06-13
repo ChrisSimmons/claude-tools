@@ -1,7 +1,8 @@
-name = "chris-tools-public"
+name = "claude-tools-public"
 main = "src/index.ts"
 compatibility_date = "2025-12-01"
 
 [[rules]]
 type = "Text"
 globs = ["**/*.md"]
+fallthrough = false
