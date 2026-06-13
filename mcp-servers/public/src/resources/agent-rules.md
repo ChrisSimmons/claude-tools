@@ -42,6 +42,7 @@ description: "General directives for an AI agent, as well as worked examples for
 - Run unit tests after every change, before committing.
 - In .NET projects with `.editorconfig` files, run `dotnet format` after committing. If it produces changes, commit them separately with a message like "dotnet format". This keeps formatting churn out of meaningful diffs.  If the diff after `dotnet format` is significant or includes files that were not changed in the branch, revert and then ask the user if they'd like to proceed with formatting.
 - NEVER commit if on a default branch (i.e. `main` or `master`)
+- The user may switch branches or pull out-of-band at any time. Run `git branch --show-current` immediately before every `git commit` to confirm you are not on a default branch, regardless of what branch you think you're on.
 - Before doing any editing, ensure the working copy is on a non-default branch
 - Assuming you are on a non-default branch, you are encouraged to commit after every edit session you run.
 - `git push` is allowed on non-default branches
