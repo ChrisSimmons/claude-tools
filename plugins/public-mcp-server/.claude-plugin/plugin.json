@@ -16,6 +16,7 @@
     }
   },
   "skills": [
-    "./skills/refresh-rules"
+    "./skills/refresh-rules",
+    "./skills/refresh-dotnet-rules"
   ]
 }
