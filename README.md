@@ -2,7 +2,7 @@
 
 Personal Claude Code skills, tools, and MCP servers.
 
-## Installation
+## Marketplace Installation
 
 Add this marketplace to Claude Code:
 
@@ -12,10 +12,10 @@ Add this marketplace to Claude Code:
 
 ## Skills
 
-| Skill            | Description                                     |
-| ---------------- | ----------------------------------------------- |
-| `squash`         | Squash consecutive co-authored commits into one |
-| `refresh-rules`  | Reload behavioral rules from the MCP server mid-session |
+| Skill           | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| `squash`        | Squash consecutive co-authored commits into one         |
+| `refresh-rules` | Reload behavioral rules from the MCP server mid-session |
 
 ## MCP Servers
 
