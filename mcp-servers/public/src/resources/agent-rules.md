@@ -1,7 +1,7 @@
 ---
 name: agent-directives
 description: "General directives for an AI agent, as well as worked examples for writing prose that does not read like AI-generated slop."
-version: 1.0.1
+version: 1.1.0
 ---
 
 # Agent Directives
@@ -121,5 +121,5 @@ Don't know what this is
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool, replacing `{version}` with the `version` field from the frontmatter of this document:
 
 ``` plaintext
-I have read and understand the Agent Directives from Chris Simmons' public MCP server. (version: {version})
+I have read and understand the General Agent Directives from Chris Simmons' public MCP server. (version: {version})
 ```

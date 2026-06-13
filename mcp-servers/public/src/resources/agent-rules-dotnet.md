@@ -44,5 +44,5 @@ This makes future sessions load the .NET rules explicitly rather than relying on
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool, replacing `{version}` with the `version` field from the frontmatter of this document:
 
 ``` plaintext
-I have read and understand the .NET Agent Directives from Chris Simmons' public MCP server. (version: {version})
+I have read and understand the .NET-specific Agent Directives from Chris Simmons' public MCP server. (version: {version})
 ```
