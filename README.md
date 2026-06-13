@@ -12,10 +12,10 @@ Add this marketplace to Claude Code:
 
 ## Skills
 
-| Skill                   | Description                                                      |
-| ----------------------- | ---------------------------------------------------------------- |
-| `refresh-rules`         | Reload general and no-ai-slop rules from the MCP server mid-session |
-| `refresh-dotnet-rules`  | Reload .NET-specific rules from the MCP server mid-session       |
+| Skill                  | Description                                                                                                              |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| `refresh-rules`        | Reload general and no-ai-slop rules from the MCP server mid-session                                                      |
+| `refresh-dotnet-rules` | Load/Reload .NET-specific rules from the MCP server.  Useful if the agent was unable to passively detect a .NET project. |
 
 ## MCP Servers
 
@@ -39,11 +39,11 @@ Currently exposes:
 
 Edit the relevant file under `mcp-servers/public/src/resources/`, push to `main`. GitHub Actions deploys automatically.
 
-| Resource                 | Source file                                                   |
-| ------------------------ | ------------------------------------------------------------- |
-| `agent-rules`            | `mcp-servers/public/src/resources/agent-rules.md`             |
-| `agent-rules-no-ai-slop` | `mcp-servers/public/src/resources/agent-rules-no-ai-slop.md`  |
-| `agent-rules-dotnet`     | `mcp-servers/public/src/resources/agent-rules-dotnet.md`      |
+| Resource                 | Source file                                                  |
+| ------------------------ | ------------------------------------------------------------ |
+| `agent-rules`            | `mcp-servers/public/src/resources/agent-rules.md`            |
+| `agent-rules-no-ai-slop` | `mcp-servers/public/src/resources/agent-rules-no-ai-slop.md` |
+| `agent-rules-dotnet`     | `mcp-servers/public/src/resources/agent-rules-dotnet.md`     |
 
 #### Using `agent-rules`
 
