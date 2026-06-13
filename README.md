@@ -14,14 +14,14 @@ Personal Claude Code skills, tools, and MCP servers.
 
 An anonymous, publicly accessible MCP server hosted on Cloudflare Workers at:
 
-```
+``` plaintext
 https://public-mcp.chris-simmons.workers.dev/mcp
 ```
 
 Currently exposes:
 
-| Resource      | URI                     | Description                                   |
-| ------------- | ----------------------- | --------------------------------------------- |
+| Resource      | URI                                                 | Description                                      |
+| ------------- | --------------------------------------------------- | ------------------------------------------------ |
 | `agent-rules` | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents |
 
 **Updating rules:** Edit `mcp-servers/public/src/resources/agent-rules.md`, push to `main`. GitHub Actions deploys automatically.
@@ -32,6 +32,6 @@ Currently exposes:
 
 Add this marketplace to Claude Code:
 
-```
+``` plaintext
 /plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
 ```
