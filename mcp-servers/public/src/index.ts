@@ -7,8 +7,7 @@ interface JsonRpcRequest {
   params?: unknown;
 }
 
-// name is the MCP identity; the CF worker name (public-mcp) drives the URL separately
-const SERVER_INFO = { name: "tools-public", version: "1.0.0" };
+const SERVER_INFO = { name: "public-mcp", version: "1.0.0" };
 const RESOURCE_URI = "chris-simmons://public-mcp/agent/rules/behavioral";
 
 const RESOURCES = [
