@@ -1,6 +1,6 @@
-# claude-tools
+# Chris Simmons' Claude Tools Marketplace
 
-Personal Claude Code skills, tools, and MCP servers.
+Marketplace for Chris's Claude Code skills, tools, and MCP servers.
 
 ## Marketplace Installation
 
@@ -14,7 +14,6 @@ Add this marketplace to Claude Code:
 
 | Skill           | Description                                             |
 | --------------- | ------------------------------------------------------- |
-| `squash`        | Squash consecutive co-authored commits into one         |
 | `refresh-rules` | Reload behavioral rules from the MCP server mid-session |
 
 ## MCP Servers
@@ -33,9 +32,9 @@ Currently exposes:
 | ------------- | --------------------------------------------------- | ------------------------------------------------ |
 | `agent-rules` | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents |
 
-**Updating rules:** Edit `mcp-servers/public/src/resources/agent-rules.md`, push to `main`. GitHub Actions deploys automatically.
+#### Updating `agent-rules`
 
-**Adding resources/tools/prompts:** Add files under `mcp-servers/public/src/resources/`, `tools/`, or `prompts/`, then register them in `mcp-servers/public/src/index.ts`.
+Edit `mcp-servers/public/src/resources/agent-rules.md`, push to `main`. GitHub Actions deploys automatically.
 
 #### Using `agent-rules`
 
@@ -46,3 +45,7 @@ At the start of every session, read the resource `chris-simmons://public-mcp/age
 ```
 
 To reload rules mid-session, use the `/refresh-rules` skill.
+
+#### Adding resources/tools/prompts
+
+Add files under `mcp-servers/public/src/resources/`, `tools/`, or `prompts/`, then register them in `mcp-servers/public/src/index.ts`.
