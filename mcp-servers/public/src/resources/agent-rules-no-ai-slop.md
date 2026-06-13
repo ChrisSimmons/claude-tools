@@ -44,6 +44,8 @@ These words and phrases are banned because they are either meaningless filler or
 - leverage
 - foster
 - bolster
+- surfacing
+  - e.g. "That is a question worth surfacing"
 
 ## Confirmation
 
