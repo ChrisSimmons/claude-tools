@@ -12,9 +12,10 @@ Add this marketplace to Claude Code:
 
 ## Skills
 
-| Skill           | Description                                             |
-| --------------- | ------------------------------------------------------- |
-| `refresh-rules` | Reload general rules from the MCP server mid-session |
+| Skill                   | Description                                                      |
+| ----------------------- | ---------------------------------------------------------------- |
+| `refresh-rules`         | Reload general and no-ai-slop rules from the MCP server mid-session |
+| `refresh-dotnet-rules`  | Reload .NET-specific rules from the MCP server mid-session       |
 
 ## MCP Servers
 
