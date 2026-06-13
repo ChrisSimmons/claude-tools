@@ -30,10 +30,10 @@ https://public-mcp.chris-simmons.workers.dev/mcp
 
 #### Skills
 
-| Skill                  | Description                                                                                                              |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `refresh-rules`        | Reload general and no-ai-slop rules from the MCP server mid-session                                                      |
-| `refresh-dotnet-rules` | Load/Reload .NET-specific rules from the MCP server. Useful if the agent was unable to passively detect a .NET project.  |
+| Skill                  | Description                                                                                                             |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `refresh-rules`        | Reload global rules from the MCP server mid-session                                                                     |
+| `refresh-dotnet-rules` | Load/Reload .NET-specific rules from the MCP server. Useful if the agent was unable to passively detect a .NET project. |
 
 #### Usage
 
@@ -48,7 +48,7 @@ At the start of every session, read the following resources from MCP server `plu
 If at any point during the session you read or edit a `*.sln` or `*.csproj` file, also read `chris-simmons://public-mcp/agent/rules/dotnet` from the same server and apply those rules (do this only once per session).
 ```
 
-To reload rules mid-session, use `/refresh-rules`. For .NET projects, use `/refresh-dotnet-rules`.
+To reload global rules mid-session, use `/refresh-rules`. For .NET projects, use `/refresh-dotnet-rules`.
 
 Once the dotnet rules load, they will prompt you to add an explicit directive to the project's `CLAUDE.md` for future sessions:
 

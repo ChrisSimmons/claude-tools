@@ -1,6 +1,6 @@
 ---
 name: refresh-rules
-description: Reload general and no-ai-slop rules from the public MCP server mid-session.
+description: Reload global rules from the public MCP server mid-session.
 ---
 
 Read the following resources from MCP server `plugin:public-mcp-server:public-mcp` and apply the rules for this session:
