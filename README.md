@@ -4,9 +4,10 @@ Personal Claude Code skills, tools, and MCP servers.
 
 ## Skills
 
-| Skill    | Description                                     |
-| -------- | ----------------------------------------------- |
-| `squash` | Squash consecutive co-authored commits into one |
+| Skill            | Description                                     |
+| ---------------- | ----------------------------------------------- |
+| `squash`         | Squash consecutive co-authored commits into one |
+| `refresh-rules`  | Reload behavioral rules from the MCP server mid-session |
 
 ## MCP Servers
 
@@ -28,6 +29,16 @@ Currently exposes:
 
 **Adding resources/tools/prompts:** Add files under `mcp-servers/public/src/resources/`, `tools/`, or `prompts/`, then register them in `mcp-servers/public/src/index.ts`.
 
+#### Using `agent-rules`
+
+Add the following to `~/.claude/CLAUDE.md` to load behavioral rules at the start of every session:
+
+``` markdown
+At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` and apply the rules.
+```
+
+To reload rules mid-session, use the `/refresh-rules` skill.
+
 ## Installation
 
 Add this marketplace to Claude Code:
@@ -35,11 +46,3 @@ Add this marketplace to Claude Code:
 ``` plaintext
 /plugin add https://raw.githubusercontent.com/ChrisSimmons/claude-tools/main/.claude-plugin/marketplace.json
 ```
-
-Then add the following to `~/.claude/CLAUDE.md` to load behavioral rules at the start of every session:
-
-```
-At the start of every session, read the resource `chris-simmons://public-mcp/agent/rules/behavioral` and apply the rules.
-```
-
-To reload rules mid-session, use the `/refresh-rules` skill.
