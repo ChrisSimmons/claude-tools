@@ -4,8 +4,8 @@ Personal Claude Code skills, tools, and MCP servers.
 
 ## Skills
 
-| Skill | Description |
-|-------|-------------|
+| Skill    | Description                                     |
+| -------- | ----------------------------------------------- |
 | `squash` | Squash consecutive co-authored commits into one |
 
 ## MCP Servers
@@ -20,9 +20,9 @@ https://public-mcp.chris-simmons.workers.dev/mcp
 
 Currently exposes:
 
-| Resource | URI | Description |
-|----------|-----|-------------|
-| `agent-rules` | `rules://claude-config` | Behavioral and communication rules for Claude |
+| Resource      | URI                     | Description                                   |
+| ------------- | ----------------------- | --------------------------------------------- |
+| `agent-rules` | `chris-simmons://public-mcp/agent/rules/behavioral` | Behavioral and communication rules for AI agents |
 
 **Updating rules:** Edit `mcp-servers/public/src/resources/agent-rules.md`, push to `main`. GitHub Actions deploys automatically.
 
