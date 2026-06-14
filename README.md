@@ -69,3 +69,17 @@ Edit the relevant file under `mcp-servers/public/src/resources/`, push to `main`
 #### Adding resources/tools/prompts
 
 Add files under `mcp-servers/public/src/resources/`, `tools/`, or `prompts/`, then register them in `mcp-servers/public/src/index.ts`.
+
+## Skills (`plugins/skills`)
+
+Personal skills collection.
+
+### Available Skills
+
+| Skill             | Description                              |
+| ----------------- | ---------------------------------------- |
+| `prep-for-review` | Prepare the current branch for code review: run tests, check formatting, resolve TODOs, and reconcile documentation |
+
+### Invoking Skills
+
+Use `/prep-for-review` to run the skill.
