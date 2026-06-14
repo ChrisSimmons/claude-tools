@@ -1,0 +1,15 @@
+{
+  "name": "skills",
+  "displayName": "Skills",
+  "description": "Personal skills collection.",
+  "author": {
+    "name": "Chris Simmons",
+    "email": "github.com@netchris.com",
+    "url": "https://github.com/ChrisSimmons"
+  },
+  "version": "1.0.0",
+  "repository": "https://github.com/ChrisSimmons/claude-tools",
+  "skills": [
+    "./skills/prep-for-review"
+  ]
+}
