@@ -74,14 +74,12 @@ Add files under `mcp-servers/public/src/resources/`, `tools/`, or `prompts/`, th
 
 Personal skills collection.
 
-#### Skills
+### Available Skills
 
 | Skill             | Description                              |
 | ----------------- | ---------------------------------------- |
 | `prep-for-review` | Prepare the current branch for code review: run tests, check formatting, resolve TODOs, and reconcile documentation |
 
-#### Usage
+### Invoking Skills
 
-``` plaintext
-/prep-for-review
-```
+Use `/prep-for-review` to run the skill.
