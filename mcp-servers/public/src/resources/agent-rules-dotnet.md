@@ -1,7 +1,7 @@
 ---
 name: agent-directives-dotnet
 description: ".NET-specific directives for an AI agent working in C# / .NET projects."
-version: 1.0.0
+version: 202606150816
 ---
 
 # .NET Projects

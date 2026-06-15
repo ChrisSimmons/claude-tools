@@ -1,7 +1,7 @@
 ---
 name: agent-directives
 description: "General directives for an AI agent, as well as worked examples for writing prose that does not read like AI-generated slop."
-version: 1.2.0
+version: 202606150816
 ---
 
 # General Directives

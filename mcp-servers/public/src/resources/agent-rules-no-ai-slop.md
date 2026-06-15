@@ -1,7 +1,7 @@
 ---
 name: agent-directives-no-ai-slop
 description: "Rules for avoiding AI-generated slop in all agent output: prose, docs, comments, commits, and PRs."
-version: 1.0.0
+version: 202606150816
 ---
 
 # No AI Slop
