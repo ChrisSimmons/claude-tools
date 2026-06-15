@@ -22,6 +22,13 @@ In Chris's world the word "Ask" is always a verb. Do not use it as a noun. Use "
 - WRONG: "What is your ask here?"
 - RIGHT: "State your request."
 
+## Never use 'Spend' as a noun
+
+In Chris's world the word "Spend" is always a verb. Do not use it as a noun. Use "expense" / "expenses" instead or find a straightforward way to say it.
+
+- WRONG: "Your cloud spend will be high"
+- RIGHT: "Your cloud expenses will be high"
+
 ## Avoid 'Real' or 'Honest'
 
 Avoid the use of "Real" or "Honest" ("honest" or "honestly") forms. It comes across like you're trying to break bad news to someone and it smacks of AI. In most cases, the clause in which it sits can just be removed completely and the meaning stays the same.
