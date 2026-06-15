@@ -71,6 +71,22 @@ Don't know what this is
 
 - If a specific Markdown rule isn't stated in this section, use this file itself as guidance on Markdown.
 
+## Project Documentation
+
+- Every project should have an `AGENTS.md` file containing tool-agnostic project guidance.
+- If using Claude, place a thin `CLAUDE.md` referencing `AGENTS.md` rather than duplicating that content. Example:
+
+``` markdown
+# CLAUDE.md
+
+- Read `AGENTS.md` before doing any work
+- Place any edits in `AGENTS.md` that you would normally place in `CLAUDE.md`
+  - The only exceptions to this are if there are Claude-specific directives that you need to record.  You can place those in `CLAUDE.md`.
+```
+
+- Place instructions in `CLAUDE.md` only when they are Claude-specific and do not apply to other AI tools.
+- If the project has a `.sln` file, ensure a "Solution Files" solution folder and add `AGENTS.md` as an item in that folder.
+
 ## Confirmation
 
 To confirm that you, the AI agent, have read and understood this file, output the following verbatim immediately after consuming and processing this file/tool, replacing `{version}` with the `version` field from the frontmatter of this document:
