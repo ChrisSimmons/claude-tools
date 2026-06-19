@@ -51,6 +51,20 @@ Don't add a dramatic "preface" to statements.  I neither need or want the empty 
 - WRONG: "Here's the part that matters: the four insert blocks use the exact link..."
 - RIGHT: "The four insert blocks use the exact link..."
 
+## No noun-verb or verb-noun "shortcuts"
+
+Unless there is a very well-established industry term, don't make up your own verbal shortcuts using "noun-verb whatever" or "verb-noun whatever".  An example is best here:
+
+- WRONG: "the batch-drain cursor"
+- RIGHT: "The cursor that drains the batch"
+
+## Avoid obscure or made-up abbreviations or acronmys
+
+Unless you're talking about a very well-established industry term, don't make up your own verbal shortcuts using "noun-verb whatever" or "verb-noun whatever".  An example is best here:
+
+- WRONG: "the ABC"
+- RIGHT: "The ancillary boundary control" (completely made up but I assume the underlying point is made)
+
 ## Banned words and phrases
 
 These words and phrases are banned because they are either meaningless filler or just rub Chris the wrong way. You may only use them if you literally cannot express a thought without using one.
