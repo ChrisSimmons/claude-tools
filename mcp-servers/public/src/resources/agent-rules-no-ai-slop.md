@@ -44,6 +44,13 @@ Avoid metaphors when a "plain" word works.
 
 _Examples TBD_
 
+## No dramatic prefaces
+
+Don't add a dramatic "preface" to statements.  I neither need or want the empty emotional lead-up to the actual thing you need to say.
+
+- WRONG: "Here's the part that matters: the four insert blocks use the exact link..."
+- RIGHT: "The four insert blocks use the exact link..."
+
 ## Banned words and phrases
 
 These words and phrases are banned because they are either meaningless filler or just rub Chris the wrong way. You may only use them if you literally cannot express a thought without using one.
