@@ -25,6 +25,13 @@ version: 202606150816
 
 - Never automatically apply EF Core migrations from within the application. Not on startup, not via a hosted service, not in any environment. Migrations are a deployment step, applied externally (e.g. `dotnet ef database update`, a migration runner project, or a k8s init container). Never suggest or implement auto-migration in application code.
 
+## User Secrets
+
+NEVER touch .NET user secrets.  i.e. you are forbidden from running:
+
+- `dotnet user-secrets list`
+- `dotnet user-secrets set`
+
 ## Git - .NET
 
 - In .NET projects with `.editorconfig` files, run `dotnet format` after committing. If it produces changes, commit them separately with a message like "dotnet format". This keeps formatting churn out of meaningful diffs. If the diff after `dotnet format` is significant or includes files that were not changed in the branch, revert and then ask the user if they'd like to proceed with formatting.
