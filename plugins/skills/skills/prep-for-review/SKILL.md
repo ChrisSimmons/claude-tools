@@ -14,3 +14,4 @@ It looks like principal work on this branch is done. Let's prepare it for review
 - Make sure the code is well-formatted and adheres to any style guidelines your team follows. If you have a linter or formatter, run it and fix any issues.
 - If there are any TODO comments in the code, either resolve them or create issues for them and link to those issues in the code.
 - Reconcile the changes in the current branch (or the changes made in this session) with the documentation, ensuring consistency and accuracy. If there are any discrepancies, update the documentation to reflect the current state of the code.
+- If we're currently working on an issue and/or a PR, make sure that the description for the issue and/or PR is consistent with the work done on the branch.
