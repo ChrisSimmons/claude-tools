@@ -40,6 +40,7 @@ If any other directives conflict with these prime directives, ignore the others 
 - Never run `git pull`.
 - never force-push to the default branch.
 - Commit messages must be concise, simple English
+- Do not amend commits unless specifically requested to do so
 - Do not include "Co-Authored-By:" or any other indications that an AI agent was used.  Although an AI agent _was_ used, the final outcome is the responsibility of the human making the prompts.
 
 ## Collaboration
