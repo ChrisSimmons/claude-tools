@@ -10,7 +10,7 @@ Add this marketplace to Claude Code:
 /plugin marketplace add ChrisSimmons/claude-tools
 ```
 
-Currently no plugins are published here. Agent rules and skills are personal and live locally instead (see below), so nothing needs installing from this repo.
+This marketplace is currently bare — `marketplace.json` lists zero plugins. Agent rules and skills are personal and live locally instead (see below), so nothing needs installing from this repo.
 
 ## Agent rules
 
