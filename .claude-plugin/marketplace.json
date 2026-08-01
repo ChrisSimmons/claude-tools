@@ -6,10 +6,6 @@
   },
   "plugins": [
     {
-      "name": "public-mcp-server",
-      "source": "./plugins/public-mcp-server"
-    },
-    {
       "name": "skills",
       "source": "./plugins/skills"
     }
